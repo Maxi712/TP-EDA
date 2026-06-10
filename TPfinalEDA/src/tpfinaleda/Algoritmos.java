@@ -21,7 +21,7 @@ public class Algoritmos {
         for(int i=0; i<n1; i++){
             l[i]=arr[left+i];
         } 
-        for(int j=0; j<n1; j++){
+        for(int j=0; j<n2; j++){
             r[j]=arr[mid+1+j];
         } 
         int i=0;
@@ -43,4 +43,19 @@ public class Algoritmos {
         }
         
     }
+
+    public static void bubbleSort(Video[] arr){
+        int n = arr.length;
+        for(int i = 0; i < n - 1; i++){
+            for(int j = 0; j < n - i - 1; j++){
+            //comparamos el atributo 'bits' (fuera bruta)
+            if(arr[j].bits > arr[j + 1].bits){
+                //intercambio (sawp)
+                Video temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
+            }
+        }
+    }
+}
 }
