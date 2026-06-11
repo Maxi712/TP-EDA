@@ -15,6 +15,7 @@ public class Video {
     }
     
     public String toString(){
-        return nombre+"/"+resolucion+"/"+bits+"/"+audio;
+        return nombre + " / " + resolucion+" / " + bits +" / " + audio;
     }
+    
 }
