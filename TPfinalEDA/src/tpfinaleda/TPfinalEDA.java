@@ -13,7 +13,7 @@ public class TPfinalEDA {
         //definimos un volumen masivo (puede ir variando este numero)
         //ojo: para Bubble Sort usar un numero mas chico (ej. 50000) o va a tardar horas.
         //para Merge Sort se banca 1.000.000 de sobra.
-        int tamañoDatos = 50000;
+        int tamañoDatos = 500000;
         System.out.println("--- PREPARANDO DATOS ---");
         Video[] datosOriginales = generarDatosMasivos(tamañoDatos);
         
